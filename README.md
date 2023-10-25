@@ -65,7 +65,7 @@ The final stage of the project aims to achieve full autonomy for the drone. Usin
 
 Our drone is equipped with various sensors that play a crucial role in its functionality:
 
-- **3-axis IMU**: This sensor provides data from an accelerometer, gyroscope, and compass, enabling the drone to determine its attitude, orientation, and heading.
+- **9-axis IMU**: This sensor provides data from an accelerometer, gyroscope, and compass, enabling the drone to determine its attitude, orientation, and heading.
 
 - **Barometer**: The barometer measures atmospheric pressure, allowing the drone to estimate its altitude and make necessary adjustments during flight.
 
