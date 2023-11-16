@@ -1,6 +1,6 @@
 # Rust Autonomous Drone Project
 
-This repository contains the source code and documentation for a Rust-based autonomous drone project that uses either the RP2040 or ESP32 microcontroller. The project is designed to be executed in multiple stages, and it covers various aspects of drone development, including sensor telemetry, sensor data filtering, real-time telemetry via radio communication, PCB prototyping for axis control and sensor data acquisition, axis regulation for stabilization and approach to the runway, and full autonomy using GPS waypoints.
+This repository contains the source code and documentation for a Rust-based autonomous drone project that utilizes the ESP32 microcontroller with RTOS for asynchronous task handling. The project is designed to be executed in multiple stages, and it covers various aspects of drone development, including sensor telemetry, sensor data filtering, real-time telemetry via radio communication, PCB prototyping for axis control and sensor data acquisition, axis regulation for stabilization and approach to the runway, and full autonomy using GPS waypoints.
 
 [//]: # (Note: This README serves as a high-level overview of the project. More detailed instructions and code documentation can be found in the respective project folders within this repository.)
 
@@ -16,7 +16,7 @@ This repository contains the source code and documentation for a Rust-based auto
 
 ## Introduction
 
-Welcome to the Rust Autonomous Drone Project repository. This open-source project aims to develop an autonomous drone system for a 2-meter wingspan motor glider using Rust as the programming language. The drone is designed to be controlled by either the RP2040 or ESP32 microcontroller, providing an affordable and flexible solution for hobbyists and drone enthusiasts.
+Welcome to the Rust Autonomous Drone Project repository. This open-source project aims to develop an autonomous drone system for a 2-meter wingspan motor glider using Rust as the programming language. The drone is designed to be controlled by the ESP32 microcontroller with RTOS, providing an affordable and flexible solution for hobbyists and drone enthusiasts.
 
 ## Project Overview
 
@@ -41,10 +41,10 @@ The project is structured into multiple stages to ensure a methodical developmen
 1. Sensor Telemetry
 In this stage, we will focus on integrating the various sensors into the drone. The sensors include:
 
-A 3-axis Inertial Measurement Unit (IMU) for attitude and orientation sensing, which includes an accelerometer, gyroscope, and compass.
-A barometer for measuring atmospheric pressure to estimate altitude.
-A GPS module for global positioning information.
-A Time-of-Flight (TOF) Lidar laser for precise ground distance measurement.
+   - A 3-axis Inertial Measurement Unit (IMU) for attitude and orientation sensing, which includes an accelerometer, gyroscope, and compass.
+   - A barometer for measuring atmospheric pressure to estimate altitude.
+   - A GPS module for global positioning information.
+   - A Time-of-Flight (TOF) Lidar laser for precise ground distance measurement.
 
 2. Sensor Data Filtering
 To ensure reliable sensor data, we will implement filtering algorithms in this stage. Filtering will help reduce noise and errors in the sensor measurements, ultimately improving the drone's performance.
@@ -71,11 +71,11 @@ Our drone is equipped with various sensors that play a crucial role in its funct
 
 - **GPS**: The GPS module provides precise global positioning data, essential for navigation and waypoint following.
 
-- **Lidar (TOF)**: A Time-of-Flight Lidar laser is used to measure ground distances with high accuracy, assisting the drone in terrain following, obstacle avoidance and landing.
+- **Lidar (TOF)**: A Time-of-Flight Lidar laser is used to measure ground distances with high accuracy, assisting the drone in terrain following, obstacle avoidance, and landing.
 
 ## Hardware
 
-The choice of hardware, specifically the selection of either the RP2040 or ESP32 microcontroller, is essential to the success of this project. Additionally, custom PCBs will be designed to facilitate the control of the drone's axes and sensor data acquisition. For detailed hardware specifications and connections, please refer to the hardware documentation within this repository.
+The choice of hardware, specifically the ESP32 microcontroller with RTOS, is essential to the success of this project. Additionally, custom PCBs will be designed to facilitate the control of the drone's axes and sensor data acquisition. For detailed hardware specifications and connections, please refer to the hardware documentation within this repository.
 
 ## Contributing
 
