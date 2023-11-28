@@ -1,3 +1,5 @@
+![glider](./res/glider.png)
+
 # Rust Autonomous Drone Project
 
 This repository contains the source code and documentation for a Rust-based autonomous drone project that utilizes the ESP32 microcontroller with RTOS for asynchronous task handling. The project is designed to be executed in multiple stages, and it covers various aspects of drone development, including sensor telemetry, sensor data filtering, real-time telemetry via radio communication, PCB prototyping for axis control and sensor data acquisition, axis regulation for stabilization and approach to the runway, and full autonomy using GPS waypoints.
